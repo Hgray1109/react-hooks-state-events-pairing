@@ -1,20 +1,28 @@
 import video from "../data/video.js";
+import DisplayVideo from "./DisplayVideo"
+import ButtonPlus from "./Buttons"
+import ButtonMinus from "./-Button"
+import Comment from "./Comment"
 
-function App() {
+
+
+function App(props) {
   console.log("Here's your data:", video);
 
   return (
     <div className="App">
-      <iframe
-        width="919"
-        height="525"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        frameBorder="0"
-        allowFullScreen
-        title="Thinking in React"
-      />
-    </div>
+      < DisplayVideo />
+      < ButtonPlus /> <ButtonMinus />
+      <div> 
+      < Comment />
+      </div>
+      
+      
+      </div>
+        
   );
 }
 
 export default App;
+
+
